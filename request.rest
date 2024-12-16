@@ -1,0 +1,53 @@
+GET http://localhost:5000/users
+
+
+###
+GET http://localhost:5000/users/4
+
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Nana",
+    "email": "nana@gmail.com",
+    "gander": "Female"
+}
+
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Anastasia",
+    "email": "konfetkakoketka@gmail.com",
+    "gander": "Female"
+}
+
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Nel",
+    "email": "neliel@gmail.com",
+    "gander": "Female"
+}
+
+
+###
+PATCH http://localhost:5000/users/2
+Content-Type: application/json
+
+{
+    "name": "Erza",
+    "email": "erza@gmail.com",
+    "gander": "Male"
+}
+
+
+###
+DELETE http://localhost:5000/users/4
